@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
-FROM nvidia/cuda:8.0-cudnn5-devel
+FROM nvidia/cuda:11.4.1-devel-ubuntu18.04
 
 # ViZdoom dependencies
 RUN apt-get update
@@ -18,7 +18,7 @@ RUN apt-get install -y \
     libgtk2.0-dev \
     libjpeg-dev \
     libopenal-dev \
-    libpng12-dev \
+    libpng-dev \
     libsdl2-dev \
     libwildmidi-dev \
     libzmq3-dev \
